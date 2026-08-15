@@ -1,0 +1,37 @@
+{
+  "name": "NUDGEE — Safe Campus",
+  "short_name": "NUDGEE",
+  "description": "Turning Positive Influence into the Strongest Peer Pressure.",
+  "start_url": "/",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#081B33",
+  "theme_color": "#081B33",
+  "categories": ["education", "lifestyle", "health"],
+  "icons": [
+    {
+      "src": "/assets/file_00000000a1388208b94f85093ee921cf.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/assets/file_00000000a1388208b94f85093ee921cf.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/assets/file_00000000a1388208b94f85093ee921cf.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "maskable"
+    },
+    {
+      "src": "/assets/file_00000000a1388208b94f85093ee921cf.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ]
+}

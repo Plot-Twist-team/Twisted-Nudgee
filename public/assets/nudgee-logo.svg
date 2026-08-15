@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512" fill="none">
+  <defs>
+    <linearGradient id="shieldGrad" x1="256" y1="80" x2="256" y2="460" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#1a4d80"/>
+      <stop offset="0.5" stop-color="#14315B"/>
+      <stop offset="1" stop-color="#0d2240"/>
+    </linearGradient>
+    <linearGradient id="shieldRim" x1="256" y1="80" x2="256" y2="460" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#F2994A"/>
+      <stop offset="1" stop-color="#e67e22"/>
+    </linearGradient>
+    <linearGradient id="figGrad" x1="256" y1="180" x2="256" y2="380" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#F2994A"/>
+      <stop offset="1" stop="#ffcb8a"/>
+    </linearGradient>
+    <radialGradient id="innerGlow" cx="256" cy="260" r="120" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#4A9EFF" stop-opacity="0.25"/>
+      <stop offset="1" stop-color="#4A9EFF" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="softGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="6" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  <path d="M256 70 L400 120 V270 C400 360 340 420 256 450 C172 420 112 360 112 270 V120 Z" fill="url(#shieldGrad)" stroke="url(#shieldRim)" stroke-width="6" stroke-linejoin="round"/>
+  <path d="M256 95 L378 136 V268 C378 344 328 396 256 422 C184 396 134 344 134 268 V136 Z" fill="url(#innerGlow)" stroke="rgba(74,158,255,0.15)" stroke-width="1.5"/>
+  <g filter="url(#softGlow)">
+    <circle cx="200" cy="215" r="20" fill="url(#figGrad)"/>
+    <path d="M200 240 C180 240 168 258 168 285 L168 320 L232 320 L232 285 C232 258 220 240 200 240Z" fill="url(#figGrad)"/>
+    <circle cx="256" cy="200" r="24" fill="url(#figGrad)"/>
+    <path d="M256 228 C230 228 214 250 214 285 L214 330 L298 330 L298 285 C298 250 282 228 256 228Z" fill="url(#figGrad)"/>
+    <circle cx="312" cy="215" r="20" fill="url(#figGrad)"/>
+    <path d="M312 240 C292 240 280 258 280 285 L280 320 L344 320 L344 285 C344 258 332 240 312 240Z" fill="url(#figGrad)"/>
+  </g>
+  <g filter="url(#softGlow)">
+    <path d="M256 140 L262 158 L280 162 L266 174 L270 192 L256 182 L242 192 L246 174 L232 162 L250 158 Z" fill="#F2994A"/>
+    <circle cx="256" cy="168" r="4" fill="#ffcb8a"/>
+  </g>
+  <circle cx="310" cy="155" r="3" fill="#4A9EFF" opacity="0.7"/>
+  <circle cx="202" cy="155" r="3" fill="#4A9EFF" opacity="0.7"/>
+  <text x="256" y="395" text-anchor="middle" font-family="Outfit, Inter, sans-serif" font-size="42" font-weight="900" fill="#ffffff" letter-spacing="2">NUDGEE</text>
+  <path d="M256 95 L378 136 V200 C378 200 300 180 256 180 C212 180 134 200 134 200 V136 Z" fill="rgba(255,255,255,0.03)"/>
+</svg>
